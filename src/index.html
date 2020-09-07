@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin="" />
+    <link rel="stylesheet" href="./app.css">
+
+    <title>IP Address Tracker | Frontend Mentor</title>
+  </head>
+
+  <body>
+
+    <div class="top">
+      <div class="top__content">
+        <h1>IP Address Tracker</h1>
+
+        <form id="form" class="formGroup">
+          <input type="text" name="search" id="search" placeholder="Search for any IP address or domain" />
+
+          <button type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+              <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
+            </svg>
+          </button>
+        </form>
+
+        <div class="results" id="results">
+          <h2>Enter an IP address to get started!</h2>
+        </div>
+      </div>
+    </div>
+
+    <div id="map"></div>
+
+    <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+    <script defer src="./app.js"></script>
+
+  </body>
+
+</html>
